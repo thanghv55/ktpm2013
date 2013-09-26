@@ -51,7 +51,11 @@ class Test(unittest.TestCase):
         self.assertEqual(detect_triangle(math.sqrt(2),math.sqrt(2), 2), "tam giac vuong can")
     def testName21(self):
         self.assertEqual(detect_triangle(2,2,3), "tam giac can")
-    def testName22(self):
+	def testName22(self):
+        self.assertEqual(detect_triangle(2,3,2), "tam giac can")
+    def testName23(self):
+        self.assertEqual(detect_triangle(3,2,2), "tam giac can")
+    def testName24(self):
         self.assertEqual(detect_triangle(1, 2**30, 2**30), "tam giac can")
 
 
